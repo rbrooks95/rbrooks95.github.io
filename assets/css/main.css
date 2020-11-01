@@ -31,6 +31,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
+	
 }
 
 ol, ul {
@@ -2058,7 +2059,32 @@ input, select, textarea {
 	.box {
 		border-color: #eeeeee;
 	}
-
+	.post.featured ul {
+		list-style-type: none;
+		
+	  }
+	  .post.featured .hide.slideUp li{
+		  padding: 70px;
+		  text-align: center;
+	  }
+	.post.featured .hide.slideUp li img{
+		max-width: 150px;
+		max-height: 150px;
+		margin-top: 25px;
+		transition-duration: .25s;
+		
+	  }
+	  .post.featured .hide.slideUp li img:hover{
+		transform: scale(1.15);
+		transition-duration: .25s;
+	  }
+	  .post.featured ul {
+		width: 70%;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		margin: 35px auto;
+	  }
 /* Button */
 
 	input[type="submit"],
@@ -2650,12 +2676,14 @@ input, select, textarea {
 
 			.image.fit {
 				margin: 2rem 0;
+				
 			}
 
 			.image.main {
 				margin: 2rem 0;
 			}
 
+			
 		}
 
 	a.image {
