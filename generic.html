@@ -59,11 +59,9 @@
 										<textarea name="message" id="message" rows="3"></textarea>
 									</div>
 								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" name="submit" /></li>
-								</ul>
+								
 							</form>
-
+							<button type="submit" form="brooks-form" value="Submit">Submit</button>
 
 						</section>
 						<section class="split contact">
@@ -118,7 +116,7 @@
 			</script>
 			
 			<script>
-				window.onload = function (){
+				window.onload = function (){ 
 					document.getElementById('brooks-form').addEventListener('submit', function(event){
 						event.preventDefault();
 						//send email js
